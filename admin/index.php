@@ -17,9 +17,10 @@
 
 
     
-    $time = date("H");
+    $time = date("H"); //if want the 24 hour clock format
 
-    $timezone = date("e");
+    
+
     
     if ($time < "12") {
         echo "Look How beautiful this Morning is:)";
