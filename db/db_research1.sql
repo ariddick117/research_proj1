@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 15, 2020 at 01:16 AM
+-- Generation Time: Feb 15, 2020 at 03:42 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -1074,7 +1074,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `last_activity`) VALUES
 (1, 'Riddick', 'Alec', 'ChiefRise117', 'alec.riddick@gmail.com', '2020-01-30 23:35:00', '::1', '2020-02-14 12:26:43.000000'),
-(2, 'spider_pan', 'docker_u', 'docker_p', '', '2020-01-30 23:35:00', '::1', '2020-02-14 13:05:08.000000');
+(2, 'spider_pan', 'docker_u', 'docker_p', '', '2020-01-30 23:35:00', '::1', '2020-02-14 15:42:24.000000');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
