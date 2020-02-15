@@ -11,6 +11,32 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome to Your Dashboard</h2>
+    <h2>Welcome to Your Website </h2>
+
+    <?php
+
+
+    
+    $time = date("H"); //if want the 24 hour clock format
+
+    
+
+    
+    if ($time < "12") {
+        echo "Look How beautiful this Morning is:)";
+    } else
+   
+    if ($time >= "12" && $time < "17") {
+        echo "Look at this nice afternoon ";
+    } else
+    
+    if ($time >= "17" && $time < "19") {
+        echo "Have a Good evening";
+    } else
+    
+    if ($time >= "19") {
+        echo "Good night Sweet Dreams";
+    }
+    ?>
 </body>
 </html>
