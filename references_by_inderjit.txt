@@ -1,4 +1,0 @@
-https://gist.github.com/introwit/8dbe76dee57033bfce1b
-
-Display greetings with respect to the time
-(morning, evening and night)

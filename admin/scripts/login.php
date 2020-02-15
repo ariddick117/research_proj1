@@ -27,6 +27,9 @@ function login($username, $password, $ip){
         while($founduser = $user_match->fetch(PDO::FETCH_ASSOC)){
             $id = $founduser['user_id'];
 
+            //update date and time in database
+            $date = date_default_timezone_set("America/Toronto");
+            $date = date("Y-m-d h:i:s");
             //TODO: update the user table and set the user_ip column to be $ip
             $update = 'UPDATE tbl_user SET user_ip=:ip WHERE user_id = :id';
             $user_update = $pdo->prepare($update);
@@ -36,11 +39,24 @@ function login($username, $password, $ip){
                     ':id'=>$id
                 )
             );
+
+            $update_time_query = 'UPDATE tbl_user SET last_activity = :curr_date WHERE user_id = :id';
+            $update_time_set = $pdo->prepare($update_time_query);
+            $update_time_set->execute(
+                array(
+                    ':id'=>$id,
+                    ':curr_date'=>$date
+                    )
+            );
         }
 
         if(isset($id)){
             //return 'You logged in successfully';
             redirect_to('index.php');
+            //update login time
+            // $date = date('Y-m-d H:i:s');
+            // mysql_query("INSERT INTO tbl_user (last_activity) VALUES ('$date')");
+            //$login_time_query = 'UPDATE tbl_user SET last_activity = ".time()." WHERE id = user_id';
         }else{
             return 'Your Password is Incorrect';
         }
