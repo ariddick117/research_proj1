@@ -14,22 +14,26 @@
     <h2>Welcome to Your Website </h2>
 
     <?php
-    $time = date("H"); //displays in the 24 hour clock format
-    if ($time < "12") {
-        echo "Good morning, good morning! It's great to stay up late!";
-    } else
-   
-    if ($time >= "12" && $time < "17") {
-        echo "Afternoon! *tips hat*";
-    } else
+    date_default_timezone_set('America/Chicago');
     
-    if ($time >= "17" && $time < "19") {
-        echo "Have a good evening";
-    } else
+    $welcome_string="Something broke... But welcome to the site!";
+    $numeric_date=date("G");
     
-    if ($time >= "19") {
-        echo "Good night, Sweet dreams";
-    }
+    //Based on military time
+    if($numeric_date>=0&&$numeric_date<=11)
+    $welcome_string="Good Morning, good morning!";
+
+    else if($numeric_date>=12&&$numeric_date<=17)
+    $welcome_string="Good Afternoon!";
+
+    else if($numeric_date>=18&&$numeric_date<=21)
+    $welcome_string="Good Evening!";
+    
+    else if($numeric_date>=22&&$numeric_date<=23)
+    $welcome_string="You're up late! Sleep is important! Well, not for me. I'm a computer.";
+    
+    //Display our greeting
+    echo "$welcome_string";
     ?>
 
     <br>
