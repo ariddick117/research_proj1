@@ -9,6 +9,10 @@
         if(!empty($username) && !empty($password)){
             // Do the login here
             $message = login($username, $password, $ip);
+            
+            // $timelog = mysqli_query(mysqli_query("SELECT last_activity FROM tbl_user WHERE id = user_id"), 0);
+            // echo "Last activity: ".relativeTime($active);
+    
         }else{
             $message = 'Please fill out the required fields';
         }

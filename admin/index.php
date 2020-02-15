@@ -14,29 +14,30 @@
     <h2>Welcome to Your Website </h2>
 
     <?php
-
-
-    
-    $time = date("H"); //if want the 24 hour clock format
-
-    
-
-    
+    $time = date("H"); //displays in the 24 hour clock format
     if ($time < "12") {
-        echo "Look How beautiful this Morning is:)";
+        echo "Good morning, good morning! It's great to stay up late!";
     } else
    
     if ($time >= "12" && $time < "17") {
-        echo "Look at this nice afternoon ";
+        echo "Afternoon! *tips hat*";
     } else
     
     if ($time >= "17" && $time < "19") {
-        echo "Have a Good evening";
+        echo "Have a good evening";
     } else
     
     if ($time >= "19") {
-        echo "Good night Sweet Dreams";
+        echo "Good night, Sweet dreams";
     }
     ?>
+
+    <br>
+    <br>
+
+    <?php
+    echo "Last Activity: ";
+    ?>
+    
 </body>
 </html>
