@@ -14,8 +14,21 @@
     <h2>Welcome to Your Website </h2>
 
     <?php
-    date_default_timezone_set('America/Chicago');
-    
+    date_default_timezone_set('America/Toronto');
+
+    //Selecting cookie from the last visit
+    setcookie('lastUserLogin', date("G:i - m/d/y"));
+    if(isset($_COOKIE['lastUserLogin'])){   
+        $login = $_COOKIE['lastUserLogin'];
+        //show last visit
+        echo "Most Recent Activity: ". $login;
+    }
+    ?>
+
+    <br>
+    <br>
+
+    <?php
     $welcome_string="Something broke... But welcome to the site!";
     $numeric_date=date("G");
     
@@ -34,13 +47,6 @@
     
     //Display our greeting
     echo "$welcome_string";
-    ?>
-
-    <br>
-    <br>
-
-    <?php
-    echo "Last Activity: ";
     ?>
     
 </body>

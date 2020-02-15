@@ -3,6 +3,7 @@
     $ip = $_SERVER['REMOTE_ADDR']; // $_UPPERCASE is a built in variable, values are assigned through your server
 
     if(isset($_POST['submit'])){
+        
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
 
@@ -29,6 +30,7 @@
 </head>
 <body>
     <?php echo !empty($message)?$message: ''; ?> <!-- Shorthand if/else statement -->
+    <h2>Hello Pan!</h2>
     <form action="admin_login.php" method="post">
         <label>Username: </label><br>
         <input type="text" name="username" value=""><br>
