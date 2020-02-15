@@ -1,3 +1,9 @@
+
+sources cited
+https://krazytech.com/programs/php-display-last-visited-date-time
+
+
+
 Date & Time
 https://stackoverflow.com/questions/9619451/php-last-log-in-script
 https://www.php.net/manual/en/function.mysql-query.php
@@ -7,3 +13,4 @@ https://stackoverflow.com/questions/7637791/how-can-i-show-the-last-login-date-a
 
 Messaging Based on Time of Day
 https://gist.github.com/introwit/8dbe76dee57033bfce1b
+

@@ -15,6 +15,18 @@
 
     <?php
     date_default_timezone_set('America/Chicago');
+
+    //////Selecting cookie from the last visit
+
+setcookie('lastLoginSuccess', date("G:i - m/d/y"));//selects the last cookie of last visit
+if(isset($_COOKIE['lastLoginSuccess']))
+ 
+{
+$Login = $_COOKIE['lastLoginSuccess'];
+echo "Your date and time for last successful login is - ". $Login;//shows last visit
+
+}
+///https://krazytech.com/programs/php-display-last-visited-date-time
     
     $welcome_string="Something broke... But welcome to the site!";
     $numeric_date=date("G");
