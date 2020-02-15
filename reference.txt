@@ -1,16 +1,17 @@
-
-sources cited
-https://krazytech.com/programs/php-display-last-visited-date-time
-
-
-
 Date & Time
 https://stackoverflow.com/questions/9619451/php-last-log-in-script
 https://www.php.net/manual/en/function.mysql-query.php
 http://w3schools.sinsixx.com/php/func_mysql_result.asp.htm
 https://www.webdeveloper.com/d/279707-how-to-display-last-visited-users-date-and-time-in-header-of-the-webpage/2
 https://stackoverflow.com/questions/7637791/how-can-i-show-the-last-login-date-and-time-that-user-logged-in-with-mysql
+https://krazytech.com/programs/php-display-last-visited-date-time
+https://stackoverflow.com/questions/3101719/how-to-echo-a-variable-from-the-function
+https://www.formget.com/read-mysql-data-using-php/
 
 Messaging Based on Time of Day
 https://gist.github.com/introwit/8dbe76dee57033bfce1b
+https://stackoverflow.com/questions/8652502/run-code-depending-on-the-time-of-day
 
+Lockout
+https://forums.phpfreaks.com/topic/157498-user-lock-out-after-5-failed-tries/
+http://webcheatsheet.com/PHP/blocking_system_access.php
